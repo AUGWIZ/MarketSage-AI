@@ -9,29 +9,9 @@ import json
 import requests
 from datetime import datetime
 
-# ============================================================
-# 🎨 YOUR BRANDING - CUSTOMIZE THIS SECTION
-# ============================================================
 BRAND_CONFIG = {
-    # Your Information
-    "consultant_name": "ADD YOUR NAME",
     "business_name": "MarketSage AI",
     "tagline": "Your AI App For Marketing Wisdom",
-    # Contact & Links
-    "email": "ADD YOUR GMAIL EMAIL ADDRESS",
-    "website": "https://yourwebsite.com",  # Update when ready
-    # "calendar_link": "https://calendly.com/your-link",  Update when ready#
-    "calendar_link": " Sign UP  For a Free Account and add your link",    
-    "course_name": "Complete AI for Business Course",
-    # Social Media (update when ready)
-    "linkedin": "https://linkedin.com/in/yourprofile",
-    "twitter": "",
-    "youtube": "",
-    # Lead Capture Settings - GOOGLE SHEETS METHOD
-    "enable_lead_capture": True,
-    "google_sheet_url": "https://script.google.com/macros/s/AKfycbxmnFf6HkC9Pgasek69ivlKsHGRHM3AgHATN0rUhrIsp9xpL9CCrzG7iHUwhrDZzPxK/exec",
-    # Customization
-    "show_powered_by": True,
 }
 # ============================================================
 
@@ -302,7 +282,7 @@ ASSESSMENT_QUESTIONS = [
     },
     {
         "id": "data_quality",
-        "category": "Data Infrastructure",
+        "category": "Data Availability",
         "question": "What marketing data do you currently collect and centralize?",
         "options": {
             1: "Scattered customer, email, campaigns data in spreadsheets",
@@ -346,7 +326,7 @@ ASSESSMENT_QUESTIONS = [
     },
     {
         "id": "ai_adoption",
-        "category": "AI Ambition",
+        "category": "AI Adoption",
         "question": "What level of AI adoption are you aiming for in the next 6–12 months?",
         "options": {
             1: "Assistive AI (content, copy, research)",
@@ -879,4 +859,5 @@ elif current_page == "💲  AI Returns":
 # Footer
 st.sidebar.markdown("---")
 st.sidebar.markdown("*Built to help small and medium businesses take the AI Leap*")
+
 st.sidebar.markdown("Powered by OpenAI & Streamlit")
