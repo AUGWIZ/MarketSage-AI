@@ -1,5 +1,5 @@
 [theme]
-
+base="light" # or "dark"
 primaryColor = "#facc15"             # Rich Purple
 backgroundColor = "#0c0c14"         # Graphite Black
 secondaryBackgroundColor = "#1b1b2b" # Soft Dark Violet
